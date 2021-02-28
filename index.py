@@ -5,10 +5,12 @@ import os
 
 client = discord.Client()
 
+gaming = '지켜보는중'
+
 @client.event
 async def on_ready():
     print("봇이 성공적으로 실행되었습니다.")
-    game = discord.Game('')
+    game = discord.Game(gaming)
     await client.change_presence(status=discord.Status.online, activity=game)
 @client.event
 async def on_message(message):
