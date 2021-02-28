@@ -11,7 +11,8 @@ gaming = '지켜보는중'
 async def on_ready():
     print("봇이 성공적으로 실행되었습니다.")
     game = discord.Game(gaming)
-    await client.change_presence(status=discord.Status.online, activity=game)
+    await client.change_presence(status=discord.Status.online, activity=game)       
+    
 @client.event
 async def on_message(message):
     if message.content.startswith('!청소'):
