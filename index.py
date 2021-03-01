@@ -5,7 +5,7 @@ import os
 
 client = discord.Client()
 
-gaming = '지켜보는중'
+gaming = '아빠안잔다'
 
 @client.event
 async def on_ready():
